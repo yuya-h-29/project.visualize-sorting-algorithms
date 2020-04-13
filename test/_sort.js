@@ -74,6 +74,7 @@ describe("Heap", () => {
     expect(heap.array[1]).to.be.equal(9);
     expect(heap.array[2]).to.be.equal(5);
     expect(heap.array.length).to.be.equal(6);
+    expect(heap.array).to.eql([4, 9, 5, 12, 10, 11]);
   });
 
   // it("should remove the first element of an array", ()=> {

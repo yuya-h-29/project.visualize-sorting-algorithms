@@ -16,11 +16,11 @@ class Heap {
     this.array[this.size] = value;
     this.size++;
     this.heapifyUp();
-    console.log(
-      "this is the current values in the array",
-      this.array,
-      this.size
-    );
+    // console.log(
+    //   "this is the current values in the array",
+    //   this.array,
+    //   this.size
+    // );
   }
 
   heapifyUp() {
@@ -40,13 +40,13 @@ class Heap {
 
   remove() {
     if (this.size !== 0) {
-      console.log("SSSSSSSS", this.array);
+      // console.log("SSSSSSSS", this.array);
       let item = this.array[0];
       this.array[0] = this.array[this.size - 1];
       this.size--;
       this.heapifyDown();
       this.array.pop();
-      console.log("RRRRRR", this.array.length, this.array);
+      // console.log("RRRRRR", this.array.length, this.array);
       return item;
     }
   }
