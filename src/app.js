@@ -3,7 +3,8 @@
       No need to keep this---it's just some code so you don't feel too lonely.
 */
 
-// How can we use require here if it's frontend? We can thank webpack.
+// How can we use require here if it's frontend? We can thank webpack
+
 const Sort = require("./Sort");
 
 // A link to our styles!
@@ -31,10 +32,51 @@ document.getElementById("title").appendChild(title);
   */
 function changeTitle(event) {
   event.preventDefault();
-  // console.log('What is an event?', event);
+  console.log("What is an event?", event);
 }
 
 const form = document.querySelector("form");
 document.addEventListener("DOMContentLoaded", () => {
   form.onsubmit = changeTitle;
+});
+
+let originalValues = document.getElementsByClassName("num");
+let finalValues = document.getElementsByClassName("arrayEL");
+let treeValues = document.getElementsByClassName("treeEL");
+
+let result = [];
+function makeArray() {
+  for (let i = 0; i < originalValues.length; i++) {
+    result.push(Number(originalValues[i].innerHTML));
+  }
+}
+makeArray();
+console.log("this is my array", result);
+
+function insertItem(number) {
+  sort.insert(number);
+}
+
+const displayItem = (array) => {
+  for (let k = 0; k < array.length; k++) {
+    finalValues[k].innerHTML = array[k];
+    treeValues[k].innerHTML = array[k];
+  }
+};
+
+let sortBtn = document.querySelector("#sort-button");
+
+let index = 0;
+sortBtn.addEventListener("click", () => {
+  let sortNum = result[index];
+  if (sortNum) {
+    insertItem(sortNum);
+    originalValues[index].innerHTML = "";
+    console.log("final result?", sort.array);
+    displayItem(sort.array);
+    index++;
+  } else {
+    index = 0;
+    result = [];
+  }
 });

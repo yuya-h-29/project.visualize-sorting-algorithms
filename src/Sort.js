@@ -1,6 +1,7 @@
-class Heap {
+class Sort {
   constructor() {
     this.array = [];
+    // this.array = array;
     this.left = undefined;
     this.right = undefined;
     this.size = 0;
@@ -21,6 +22,7 @@ class Heap {
     //   this.array,
     //   this.size
     // );
+    // return this.array;
   }
 
   heapifyUp() {
@@ -90,6 +92,8 @@ class Heap {
   }
 
   sort() {
+    //use for loop?
+
     console.log("sort!");
   }
 
@@ -98,7 +102,7 @@ class Heap {
   }
 }
 
-module.exports = Heap;
+module.exports = Sort;
 
 // Heap Sort: Heap Sort uses Binary Heap to sort an array in O(nLogn) time.
 // Priority Queue: Priority queues can be efficiently implemented using Binary Heap because it supports insert(), delete() and extractmax(), decreaseKey() operations in O(logn) time.

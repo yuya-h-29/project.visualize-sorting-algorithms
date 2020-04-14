@@ -1,17 +1,18 @@
-const Heap = require("../src/Sort");
+const Sort = require("../src/Sort");
 const { expect } = require("chai");
 
 let heap;
-describe("Heap", () => {
+describe("Sort", () => {
   beforeEach(() => {
-    heap = new Heap();
+    // heap = new Sort([3, 6, 7, 1]);
+    heap = new Sort();
   });
 
   it("should be a function", () => {
-    expect(Heap).to.be.a("function");
+    expect(Sort).to.be.a("function");
   });
   it("should have a sort method", () => {
-    expect(Heap.prototype.sort).to.be.a("function");
+    expect(Sort.prototype.sort).to.be.a("function");
   });
 
   it("should have inset method", () => {
@@ -76,14 +77,4 @@ describe("Heap", () => {
     expect(heap.array.length).to.be.equal(6);
     expect(heap.array).to.eql([4, 9, 5, 12, 10, 11]);
   });
-
-  // it("should remove the first element of an array", ()=> {
-  //   const one = 1;
-  //   const two = 2;
-  //   const three = 3;
-  //   heap.insert(one);
-  //   heap.insert(two);
-  //   heap.insert(three);
-  //   heap
-  // });
 });

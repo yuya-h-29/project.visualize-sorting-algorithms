@@ -1,3 +1,102 @@
 body {
   background-color: #55b491;
+  font-family: Arial, Helvetica, sans-serif;
+
+  text-align: center;
+}
+
+#title {
+  color: black;
+}
+
+#visual-area {
+  float: left;
+  text-align: center;
+  /* display: inline-block; */
+  margin-top: 20px;
+  padding: 30px;
+  width: 700px;
+  background-color: rgb(200, 200, 200);
+  height: auto;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.container {
+  text-align: center;
+  height: 95px;
+}
+
+table {
+  /* border: 1px solid black; */
+  font-size: 30px;
+  width: 85%;
+  margin: 20px, auto;
+}
+
+#top {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+th,
+td {
+  border: 15px none black;
+  background-color: blanchedalmond;
+  padding: 5px, 30px, 5px, 10px;
+}
+
+th {
+  /* border: 1px solid black; */
+  font-weight: 700;
+  width: 174px;
+}
+
+td {
+  width: 50px;
+  height: 90px;
+}
+
+#mybutton {
+  position: fixed;
+  text-align: center;
+  display: inline-block;
+  margin-top: 500px;
+}
+
+#sort-button {
+  display: block;
+  /* float: left; */
+  font-size: 20px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+#tree-container {
+  float: right;
+  display: block;
+  width: 400px;
+  height: auto;
+  margin-top: 20px;
+  margin-right: 200px;
+  /* background-color: rgb(200, 200, 200); */
+}
+
+.column {
+  width: 90px;
+  height: 90px;
+  /* display: block; */
+  display: inline-block;
+  text-align: center;
+  background-color: blanchedalmond;
+  font-size: 30px;
+  padding: 5px, 10px, 5px, 10px;
+  margin-top: 20px;
+}
+
+#left {
+  margin-right: 50px;
+}
+#right {
+  margin-left: 50px;
 }

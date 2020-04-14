@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <!-- <script src="path/to/my/store.legacy.min.js"></script> -->
+    <!-- <script> -->
     <title>Code Chrysalis</title>
+    <!-- <link rel="stylesheet" href="src/index.css" /> -->
+    <!-- //  <script type="module" src="src/app.js">
+    </script> -->
+    <!-- <script src="src/app.js"></script> -->
+    <!-- <script src="public/bundle.js"></script> -->
   </head>
 
   <body>
@@ -17,6 +24,77 @@
     Where is this public/bundle.js file coming from?
     It comes from our trusty friend, webpack.
   -->
+
+    <div id="visual-area">
+      <div id="top">
+        <div class="container">
+          <table id="originalTable">
+            <tr class="even">
+              <th scope="row">Original Data</th>
+              <td class="num">5</td>
+              <td class="num">6</td>
+              <td class="num">2</td>
+              <td class="num">8</td>
+              <td class="num">1</td>
+              <td class="num">9</td>
+              <td class="num">3</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- <input type="button" value="sort" onclick="dosomething()" /> -->
+      <div class="container">
+        <table class="arrayTable">
+          <tr class="even">
+            <th scope="row">Array</th>
+            <td class="arrayEL"></td>
+            <td class="arrayEL"></td>
+            <td class="arrayEL"></td>
+            <td class="arrayEL"></td>
+            <td class="arrayEL"></td>
+            <td class="arrayEL"></td>
+            <td class="arrayEL"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="container">
+        <table class="arrayTable">
+          <tr class="even">
+            <th scope="row">Index</th>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="tree-container">
+      <div class="row1">
+        <div class="column treeEL"></div>
+      </div>
+      <div class="row2">
+        <div class="column treeEL" id="left"></div>
+        <div class="column treeEL" id="right"></div>
+      </div>
+      <div class="row3">
+        <div class="column treeEL"></div>
+        <div class="column treeEL"></div>
+        <div class="column treeEL"></div>
+        <div class="column treeEL"></div>
+      </div>
+    </div>
+
+    <div id="mybutton">
+      <button id="sort-button" type="button">Input and sort</button>
+    </div>
+
     <script type="text/javascript" src="/public/bundle.js"></script>
   </body>
 </html>
